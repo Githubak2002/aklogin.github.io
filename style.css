@@ -1,0 +1,182 @@
+/* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        } */
+
+* {
+    font-family: 'Acme', sans-serif;   /* letter-spacing: 0.02cm; */
+    /* font-weight: 100; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-weight: 650;
+    background: linear-gradient(45deg, #b545ed, #2e9dd4e3, #886df1, #e37979e2);
+    /* background: linear-gradient(45deg, #ff9068, rgb(197, 92, 92), #8c5bd1, #4f9df9, #6fc364, rgb(247, 148, 56)); */
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Lora', serif;  
+    font-size: 2.1em; 
+     /* letter-spacing: .1cm; */
+    text-align: center;
+    color: #211e1e;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin: 5px 15px 5px 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.6em;
+    color: black;
+    background-image: linear-gradient(135deg, rgba(117, 162, 177, 0.567) 0%, rgba(94, 77, 202, 0.46) 100%);
+}
+
+
+
+
+
+.btn {
+    transition: all 0.3s ease-in-out;
+    /* font-family: "Dosis", sans-serif; */
+}
+
+.btn {
+    font-weight: 780;
+    margin: 5px;
+    width: 150px;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.53);
+    border-radius: 5px;
+    background-image: linear-gradient(135deg, rgb(75 0 255 / 27%) 0%, rgb(161 195 195 / 40%) 100%);
+    box-shadow: rgb(38, 35, 45) 0px 20px 30px -6px;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+form #addbutton1 {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+ul li input[type="checkbox"] {
+    margin-left: 12px;
+    margin-right: 12px;}
+
+ul li input[type="checkbox"] ::after{
+    background-color: orange;
+}
+ul li label {
+    flex: 1;
+    color: #000;
+    margin: 2px 5px 2px 0px;
+    font-size: 2.2em;
+}
+
+ul li #addbutton1 {
+    background-color: #f44336;
+    color: #ff0000;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+ul li button{
+    font-size: 1.2em;
+    margin: 5px 15px 5px 15px;
+    width: 120px;
+    height: 45px;
+    border-radius: 4px;
+    background-image: linear-gradient(135deg, rgba(96, 44, 215, 0.27) 0%,rgba(144, 214, 214, 0.4));
+    cursor: pointer;
+    color: black;
+}
+
+
+
